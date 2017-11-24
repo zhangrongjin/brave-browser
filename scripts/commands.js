@@ -24,6 +24,7 @@ program
   .option('--antimuon_google_api_key <antimuon_google_api_key>')
   .option('--antimuon_google_api_endpoint <antimuon_google_api_endpoint>')
   .option('--no_branding_update', 'don\'t copy BRANDING to the chrome theme dir')
+  .option('--no_extension_update', 'don\'t copy extensions manifest')
   .arguments('[build_config]')
   .action(build)
 
