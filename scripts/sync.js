@@ -59,12 +59,14 @@ if (program.init) {
 //   util.addAndroidTarget();
 // }
 
-if (program.android) {
-   util.installBuildAndroidDeps();
-}
 
 if (program.init) {
   util.gclientSync()
+}
+
+
+if (program.android) {
+   util.installBuildAndroidDeps();
 }
 
 
