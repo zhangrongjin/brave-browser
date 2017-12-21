@@ -25,6 +25,9 @@ program
   .option('--antimuon_google_api_endpoint <antimuon_google_api_endpoint>')
   .option('--no_branding_update', 'don\'t copy BRANDING to the chrome theme dir')
   .option('--no_extension_update', 'don\'t copy extensions manifest')
+  .option('--android', 'build android apks')
+  .option('--target_os <target_os>', 'target os: linux, android', 'linux')
+  //set I need for android
   .arguments('[build_config]')
   .action(build)
 
