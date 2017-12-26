@@ -35,7 +35,7 @@
       },
       "antimuon": {
         "dir": "src/brave",
-        "branch": "master",
+        "branch": "topsites_suggestions_cr63",
         "repository": {
           "url": "git@github.com:brave/antimuon.git"
         }
