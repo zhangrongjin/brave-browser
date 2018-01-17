@@ -35,7 +35,7 @@
       },
       "antimuon": {
         "dir": "src/brave",
-        "branch": "master",
+        "branch": "customize_tab_shape",
         "repository": {
           "url": "git@github.com:brave/antimuon.git"
         }
