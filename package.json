@@ -37,7 +37,7 @@
       },
       "antimuon": {
         "dir": "src/brave",
-        "branch": "master",
+        "branch": "customize_tab_shape_mac",
         "repository": {
           "url": "git@github.com:brave/antimuon.git"
         }
