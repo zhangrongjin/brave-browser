@@ -25,7 +25,7 @@
     "projects": {
       "chrome": {
         "dir": "src",
-        "tag": "71.0.3578.53",
+        "tag": "71.0.3578.62",
         "repository": {
           "url": "https://chromium.googlesource.com/chromium/src.git"
         },
@@ -41,7 +41,7 @@
       },
       "brave-core": {
         "dir": "src/brave",
-        "branch": "master",
+        "branch": "71.0.3578.62",
         "repository": {
           "url": "https://github.com/brave/brave-core.git"
         }
