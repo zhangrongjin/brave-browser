@@ -39,6 +39,7 @@ program
   .option('--brave_google_api_endpoint <brave_google_api_endpoint>')
   .option('--channel <target_chanel>', 'target channel to build', /^(beta|dev|nightly|release)$/i, 'release')
   .option('--ignore_compile_failure', 'Keep compiling regardless of error')
+  .option('--android', 'Use android target chrome_public_apk')
   .arguments('[build_config]')
   .action(build)
 
