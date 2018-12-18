@@ -31,15 +31,6 @@ if (program.init) {
 }
 
 let updatedVersion = false
-
-projectNames.forEach((name) => {
-  let project = config.projects[name]
-  if (program.init || program.all || program[project.arg_name + '_ref']) {
-    updatedVersion = true
-    util.setDepVersion(project.dir, project.ref)
-  }
-})
-
 if (updatedVersion || program.init || program.run_sync) {
   util.gclientSync()
 }
