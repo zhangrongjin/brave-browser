@@ -34,7 +34,6 @@ You can [visit our website](https://brave.com/downloads.html) to get the latest 
 For other versions of our browser, please see:
 
 * iOS - [brave/brave-ios](https://github.com/brave/brave-ios)
-* Android - [brave/browser-android-tabs](https://github.com/brave/browser-android-tabs)
 
 ## Community
 

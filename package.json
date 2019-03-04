@@ -46,13 +46,6 @@
         "repository": {
           "url": "https://github.com/brave/brave-core.git"
         }
-      },
-      "browser-android": {
-        "dir": "src",
-        "branch": "master",
-        "repository": {
-          "url": "https://github.com/brave/browser-android-tabs.git"
-        }
       }
     },
     "widevine": {
