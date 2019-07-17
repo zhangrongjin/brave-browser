@@ -17,6 +17,8 @@ using ::testing::_;
 using ::testing::Return;
 using ::testing::Invoke;
 
+using std::placeholders::_1;
+
 namespace ads {
 
 class AdsTabsTest : public ::testing::Test {
@@ -101,7 +103,12 @@ class AdsTabsTest : public ::testing::Test {
               return value;
             }));
 
-    ads_->Initialize();
+    auto callback = std::bind(&AdsTabsTest::OnInitialize, this, _1);
+    ads_->Initialize(callback);
+  }
+
+  void OnInitialize(const bool result) {
+    EXPECT_EQ(Result::SUCCESS, result);
   }
 
   void TearDown() override {
