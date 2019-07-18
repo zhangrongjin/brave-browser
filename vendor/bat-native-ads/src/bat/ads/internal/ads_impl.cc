@@ -1297,8 +1297,8 @@ void AdsImpl::GenerateAdReportingNotificationShownEvent(
 
   writer.String("notificationClassification");
   writer.StartArray();
-  std::vector<std::string> classifications = base::SplitString(info.category,
-      "-", base::KEEP_WHITESPACE, base::SPLIT_WANT_ALL);
+  std::vector<std::string> classifications = base::SplitString(
+      info.category, "-", base::KEEP_WHITESPACE, base::SPLIT_WANT_ALL);
   for (const auto& classification : classifications) {
     writer.String(classification.c_str());
   }
@@ -1373,8 +1373,8 @@ void AdsImpl::GenerateAdReportingNotificationResultEvent(
 
   writer.String("notificationClassification");
   writer.StartArray();
-  std::vector<std::string> classifications = base::SplitString(info.category,
-      "-", base::KEEP_WHITESPACE, base::SPLIT_WANT_ALL);
+  std::vector<std::string> classifications = base::SplitString(
+      info.category, "-", base::KEEP_WHITESPACE, base::SPLIT_WANT_ALL);
   for (const auto& classification : classifications) {
     writer.String(classification.c_str());
   }
